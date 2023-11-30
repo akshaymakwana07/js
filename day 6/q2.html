@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> 2 </title>
+
+</head>
+<body>
+	<center>
+		<label>Enter Amount : </label>
+		<br>
+		<br>
+		<input type="text" id="i1" placeholder="Enter Amount">
+		<br>
+		<br>
+		<h1 id="ans"></h1>
+	</center>
+</body>
+</html>
+<script type="text/javascript">
+	let a = document.getElementById("i1").value
+	let price
+	let finalprice
+
+	if(a > 0 && a <= 10000)
+	{
+		price = (a*5)/100;
+		finalprice = a - price
+		document.getElementById("ans").innerHTML = +finalprice
+	}
+	else if(a >= 10001 && a < 20000)
+	{
+		price = (a*10)/100;
+		finalprice = a - price
+		document.getElementById("ans").innerHTML = +finalprice
+	}
+	else if(a >= 20001 && a < 30000)
+	{
+		price = (a*15)/100;
+		finalprice = a - price
+		document.getElementById("ans").innerHTML = +finalprice
+	}
+	else if(a >= 30001  && a < 40000)
+	 {
+		price = (a*20)/100;
+		finalprice = a - price
+		document.getElementById("ans").innerHTML = +finalprice
+	}
+	else(a >= 40001)
+	{
+		price = (a*25)/100;
+		finalprice = a - price
+		document.getElementById("ans").innerHTML = +finalprice
+	}
+</script>

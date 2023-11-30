@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <label for="">enter your score</label><br>
+        <input type="text" placeholder="enter your score" id="a1">
+
+
+        <h1 id="result"></h1>
+    </center>
+    
+</body>
+</html>
+
+<script>
+
+    let score=document.getElementById("a1").value;
+
+    if (score==""){
+        document.getElementById("result").innerHTML=""
+    } 
+    else{
+        if (score>=90 && score<=100){
+            document.getElementById("result").innerHTML=score + "A "
+        } 
+        else if(score>80 && score<90) {
+            document.getElementById("result").innerHTML=score + "B "
+
+        }
+
+        else if(score>70 && score<80) {
+            document.getElementById("result").innerHTML=score + "C "
+
+        }
+
+        else if(score>60 && score<70) {
+            document.getElementById("result").innerHTML=score + "D "
+
+        }
+
+        else if(score>=0 && score<60) {
+            document.getElementById("result").innerHTML= score + "FAIL "
+
+        }
+
+    }
+</script>
