@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <label for="">Vowel</label> <br>
+        <input type="text" placeholder="Vowel" id="a1">
+
+        <h1 id="ans"></h1>
+    </center>
+</body>
+</html>
+
+<script>
+    let vowel = document.getElementById("a1").value;
+
+    if(vowel=="")
+    {
+        document.getElementById("ans").innerHTML=""
+    }else{
+        if (vowel =="a" || vowel =="e" || vowel =="i" || vowel =="u"  || vowel =="o" ){
+            document.getElementById("ans").innerHTML="vowel"
+        }else{
+            document.getElementById("ans").innerHTML="consonant"
+        }
+    }
+</script>

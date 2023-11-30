@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <center>
+        <label for="">Enter password</label> <br>
+        <input type="text" placeholder="password" id="a1">
+
+        <h1 id="ans"></h1>
+    </center>
+</body>
+</html>
+
+<script>
+    let savedpassword='abc@1234';
+    let enteredpassword=document.getElementById("ans").value;
+
+    if (enteredpassword==""){
+        document.getElementById("ans").innerHTML=""
+    }
+    else{
+        if (savedpassword===enteredpassword){
+            document.getElementById("ans").innerHTML="log in !"
+        }
+        else {
+            let newpassword=prompt("forgot password ? create new one ")
+            if (newpassword.length >= 8){
+                document.getElementById("ans").innerHTML="password changed"
+            } 
+            else{
+                document.getElementById("ans").innerHTML="minimum 8 character requierd"
+            }
+            
+
+        }
+    }
+</script>
