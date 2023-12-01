@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <center>
+        <label for="">electricity bill</label><br>
+        <input type="text" placeholder="electricity bill" id="a1">
+
+        <h1 id="ans"></h1>
+    </center>
+    
+</body>
+</html>
+
+<script>
+    let a=document.getElementById("a1").value;
+
+    if(a==""){
+        
+        document.getElementById("ans").innerHTML=""
+    }
+    else{
+        if(a<=100){
+            let bill=a*1;
+            document.getElementById("ans").innerHTML="$1 per unit =" +bill;
+        } 
+        else if (a>101 && a<199){
+            let bill=a*2 -100;
+            document.getElementById("ans").innerHTML="$2 per unit =" +bill;
+        }
+        else{
+            let bill=a*3-300;
+            document.getElementById("ans").innerHTML="$3 per unit =" +bill;
+        }
+    }
+</script>
