@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+  
+</head>
+<body>
+    <center>
+        <h1>Student grades</h1>
+        <hr>
+       <input type="text" id="a1" placeholder="Enter student grades">
+       <br>
+       <h1 id="ans"></h1>
+
+    </center>
+    
+</body>
+</html>
+<script>
+  let a=document.getElementById("a1").value;
+let student;
+
+  switch(a)
+  {  
+    case "A" : student ="Excellent!"
+     break;
+     case "B" :student ="Well done!"
+
+     break;
+     case "C" : student ="Good job!"
+     
+     break;
+     case "D" : student ="You got a D"  
+     break;
+
+     default : ""
+     break;
+    
+  }
+ document.getElementById("ans").innerHTML="" +student;
+</script>

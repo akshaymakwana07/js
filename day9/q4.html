@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>language name</h1>
+        <h2>English</h2>
+        <h2>Spanish </h2>
+        <h2>French</h2>
+
+        <input type="text" placeholder="enter" id="a1">
+        <h1 id="ans"></h1>
+    </center>
+    
+</body>
+</html>
+<script>
+    let a=document.getElementById("a1").value;
+    let lan
+
+    switch(a){
+        case 'english' :lan = 'Hello!'
+        break
+
+        case 'spanish' :lan = '¡Hola!'
+        break
+
+        case 'french' :lan = 'onjour!'
+        break
+
+        default : "not valid language"
+        
+    }
+    document.getElementById("ans").innerHTML=lan
+
+</script>

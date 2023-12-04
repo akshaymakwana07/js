@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Traffic Light</h1>
+
+        <input type="text" placeholder="enter" id="a1">
+        <h1 id="ans"></h1>
+    </center>
+    
+</body>
+</html>
+<script>
+
+    let a=document.getElementById("a1").value;
+    let light;
+
+    switch(parseInt(a)){
+
+        case 1: light="RED "
+        light+="Stop!"
+        break
+
+        case 2: light="YELLO "
+        light+="Slow down!"
+        break
+
+        case 3: light="GREEN "
+        light+="Go"
+        break
+
+        default: ""
+        break
+
+    }
+
+    console.log ("light is =",light)
+
+</script>
