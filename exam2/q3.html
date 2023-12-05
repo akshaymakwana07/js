@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <h1>Special Offer Eligibility Checker</h1>
+    <label for="">numPurchases</label><br>
+    <input type="text" name="" placeholder="numPurchases" id="a1"><br><br>
+
+
+    <label for="">numPurchases</label><br>
+    <input type="text" name="" placeholder="numPurchases" id="a2">
+
+    <h1 id="ans"></h1>
+</center>
+</body>
+</html>
+
+<script>
+    let num = document.getElementById("a1").value
+    let total = document.getElementById("a2").value
+
+    if(num == "" && total == "")
+    {
+        document.getElementById("ans").innerHTML = ""
+    }
+    else
+    {
+        if(num >= 3 && total >=100)
+        {
+            document.getElementById("ans").innerHTML = "Congratulations! You are eligible for a special offer."
+        }
+        else
+        {
+            document.getElementById("ans").innerHTML = "Sorry! You are not eligible for the special offer."
+        }
+    }
+</script>

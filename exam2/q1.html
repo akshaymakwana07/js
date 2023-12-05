@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-1</title>
+</head>
+<body>
+    <center>
+        <label for="">vowel</label><br>
+        <input type="text" placeholder="vowel" id="a1">
+
+        <h1 id="ans"></h1>
+    </center>
+    
+</body>
+</html>
+
+<script>
+    let a=document.getElementById("a1").value;
+    let k;
+
+    switch(a){
+        case 'a': k='vowel'
+        break
+
+        case 'e': k='vowel'
+        break
+
+        case 'i': k='vowel'
+        break
+
+        case 'o': k='vowel'
+        break
+
+        case 'u': k='vowel'
+        break
+
+        case 'A': k='vowel'
+        break
+
+        case 'E': k='vowel'
+        break
+
+        case 'I': k='vowel'
+        break
+
+        case 'O': k='vowel'
+        break
+
+        case 'O': k='vowel'
+        break
+
+        default : k='consonant'
+    }
+
+    document.getElementById("ans").innerHTML=k
+</script>

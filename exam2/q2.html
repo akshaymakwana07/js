@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <center>
+        <h1>day of the week's</h1>
+
+        <input type="text" placeholder="enter day" id="a1">
+
+        <h1 id="ans"></h1>
+
+    </center>
+    
+</body>
+</html>
+<script>
+    let day=document.getElementById("a1").value;
+
+    let dayname;
+     
+     switch(parseInt(day)){
+        case 1 : dayname="sunday";
+        break
+
+        case 2 : dayname ="monday"
+        break
+
+        case 3 : dayname ="tuesday"
+        break
+
+        case 4 : dayname ="wenseday"
+        break
+
+        case 5 : dayname ="turshday"
+        break
+
+        case 6 : dayname ="friday"
+        break
+
+        case 7 : dayname ="sturday"
+        break
+
+        default : dayname ="Invalid input"
+       
+
+     }
+     document.getElementById("ans").innerHTML=dayname
+
+</script>
