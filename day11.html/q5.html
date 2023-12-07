@@ -11,10 +11,14 @@
 </html>
 
 <script>
-    let sum=0;
+    let k=1;
 
-    for(let a=1; a<=10; a++){
-        sum +=a
+    for(let i=4; i>=1; i--){
+        let p=""
+        for(let j=1; j<=i; j++){
+            p+=k
+            k++
+        }
+        console.log(p)
     }
-    console.log(sum)
 </script>

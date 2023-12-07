@@ -11,10 +11,16 @@
 </html>
 
 <script>
-    let sum=0;
+   
+   let count=0;
 
-    for(let a=1; a<=10; a++){
-        sum +=a
+   for(let i=10; i<=40; i++){
+    if(i%2==0){
+        console.log(i)
+        count++
     }
-    console.log(sum)
+    if(count==10){
+        break
+    }
+   }
 </script>
