@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <input type="text" id="a1" placeholder="enter number">
+
+        <h1 id="ans"></h1>
+    </center>
+    
+</body>
+</html>
+
+<script>
+    let a=document.getElementById("a1").value;
+    for(let i=1; i<=parseInt(a); i++){
+        if(i%3==0 && i%5==0){
+            console.log("fizzbuzz")
+        }else if(i%3==0){
+            console.log("fizz")
+        }else if (i%5==0){
+            console.log("buzz")
+        }else{
+            console.log(i)
+            
+        }
+
+    }
+</script>
