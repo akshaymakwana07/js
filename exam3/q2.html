@@ -20,17 +20,20 @@
     
     let f=0;
     let s=1;
-    let next;
+    let fibonacci;
 
     for(let i=1; i<=num; i++){
         if(i<=1){
-            next=i;
+            fibonacci=i;
         }
         else{
-            next=f+s;
+            fibonacci=f+s;
             f=s;
-            s=next;
+            s=fibonacci;
         }
-        console.log(next)
+        console.log(fibonacci)
     }
 </script>
+
+
+

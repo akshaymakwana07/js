@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <label for="">enter number</label><br>
+        <input type="text" id="a1" placeholder="enter numbee">
+    </center>
+    
+</body>
+</html>
+
+<script>
+    let k=document.getElementById("a1").value;
+
+    function prodect(){
+        let a=1
+        for(let i=0; i<k.length; i++){
+            a*=k[i]
+
+        }
+        console.log(a)
+    }
+    prodect()
+</script>
