@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <center>
+        <label for="">enter firstname</label><br>
+        <input type="text" id="a1" placeholder="enter firstname"><br><br>
+
+        <label for="">enter lastname</label><br>
+        <input type="text" id="a2" placeholder="enter lastname">
+    </center>
+    
+</body>
+</html>
+
+<script>
+    let firstname=document.getElementById("a1").value;
+    let lastname=document.getElementById("a2").value;
+
+    function fullname(firstname,lastname){
+        return firstname+lastname
+    }
+
+    console.log(fullname(firstname,lastname))
+
+</script>

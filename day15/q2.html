@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <center>
+        <label for="">enter number</label><br>
+        <input type="text" id="a1" placeholder="enter number"><br><br>
+
+        <label for="">enter number</label><br>
+        <input type="text" id="a2" placeholder="enter number">
+
+        <h1 id="ans"></h1>
+    </center>
+    
+</body>
+</html>
+
+<script>
+    let sum=function(a,b){
+        document.getElementById("ans").innerHTML= +a + +b
+
+    }
+
+    sum(document.getElementById("a1").value,document.getElementById("a2").value)
+    
+</script>
