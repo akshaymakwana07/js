@@ -11,14 +11,12 @@
 </html>
 
 <script>
-    let ak = (num) => {
-        return num*num
-    }
-    function num(){
-        return ak
+
+    function add(x){
+        return function(y){
+            return x+y
+        }
     }
 
-    // let a=num()
-
-    console.log(num())
+    console.log(add(5)(4))
 </script>

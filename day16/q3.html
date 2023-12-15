@@ -11,14 +11,14 @@
 </html>
 
 <script>
-    let ak = (num) => {
-        return num*num
+    function greet(name){
+        return function(){
+            return name + ("akshay")
+        }
+        
     }
-    function num(){
-        return ak
-    }
+    let ans=greet(("hello "))
 
-    // let a=num()
+    console.log(ans())
 
-    console.log(num())
 </script>
