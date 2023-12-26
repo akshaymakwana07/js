@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+    let quotes=[
+        {text:"The purpose of our lives is to be happy.",
+         author:"Dalai Lama",
+         category:"life"
+        
+        },
+
+        {text:"Life is what happens when you're busy making other plans.",
+         author:"pratik kame",
+         category:"life"
+        
+        },
+
+        {text:"The only thing standing between you and outrageous success is continuous progress you need discipline.",
+         author:"akshay makwana",
+         category:"success"
+        
+        },
+
+        {text:"Either you run the day or the day runs you.",
+         author:"vivek",
+         category:"education"
+        
+        },
+    ]
+
+
+    let array=[]
+    for (let i=0; i<quotes.length; i++){
+        if(quotes[i].category=="education"){
+            array.push(quotes[i].text)
+        }
+    }
+    // document.write(array)
+    console.log(array)
+    
+</script>

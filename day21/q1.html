@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+
+    let student = [
+        {name:"akshay", score: 95},
+        {name:"pratik", score: 93},
+        {name:"harshil", score: 80},
+        {name:"sarthi", score: 10},
+        {name:"vivek", score: 90},
+    ]
+
+    let array=[]
+    for (let i=0; i<student.length; i++){
+        if(student[i].score>=90){
+            array.push(student[i].name)
+        }
+    }
+    document.write(array)
+    // console.log(array)
+</script>
