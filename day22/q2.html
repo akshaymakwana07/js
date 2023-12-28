@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p class="odd">Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>
+        Debitis ipsum ea iure eos commodi, omnis, molestiae vero, <br>
+        expedita corporis maxime earum voluptatem inventore obcaecati <br>
+        culpa ipsam placeat dignissimos rerum necessitatibus.</p>
+
+
+        <p class="even">Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>
+            Debitis ipsum ea iure eos commodi, omnis, molestiae vero, <br>
+            expedita corporis maxime earum voluptatem inventore obcaecati <br>
+            culpa ipsam placeat dignissimos rerum necessitatibus.</p>
+
+            <p class="odd">Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>
+                Debitis ipsum ea iure eos commodi, omnis, molestiae vero, <br>
+                expedita corporis maxime earum voluptatem inventore obcaecati <br>
+                culpa ipsam placeat dignissimos rerum necessitatibus.</p>
+
+                <p class="even">Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>
+                    Debitis ipsum ea iure eos commodi, omnis, molestiae vero, <br>
+                    expedita corporis maxime earum voluptatem inventore obcaecati <br>
+                    culpa ipsam placeat dignissimos rerum necessitatibus.</p>
+
+                    <p class="odd">Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>
+                        Debitis ipsum ea iure eos commodi, omnis, molestiae vero, <br>
+                        expedita corporis maxime earum voluptatem inventore obcaecati <br>
+                        culpa ipsam placeat dignissimos rerum necessitatibus.</p>
+
+
+                        <p class="even">Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>
+                            Debitis ipsum ea iure eos commodi, omnis, molestiae vero, <br>
+                            expedita corporis maxime earum voluptatem inventore obcaecati <br>
+                            culpa ipsam placeat dignissimos rerum necessitatibus.</p> <hr><hr>
+
+
+            <button id="a1">CLICK HERE</button>
+            <button id="a2">CLICK HERE</button>                    
+
+
+    
+</body>
+</html>
+
+<script>
+
+    document.getElementById("a1").addEventListener("click",a1)
+
+    function a1(){
+        var odd=document.querySelectorAll(".odd")
+        for(let i=0; i<odd.length; i++){
+            odd[i].style.color="red"
+            odd[i].style.background="blue"
+        }
+    }
+
+
+
+    document.getElementById("a2").addEventListener("click",a2)
+
+    function a2(){
+    var even=document.querySelectorAll(".even")
+    for(let i=0; i<even.length; i++){
+        even[i].style.color="yellow"
+        even[i].style.background="black"
+    }
+}
+
+
+
+</script>

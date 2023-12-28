@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>first heading</h1>
+    <hr>
+
+    <h3>first heading</h3>
+    <h3>second heading</h3>
+    <h3>third heading</h3><hr>
+
+    <h5>first heading</h5>
+    <h5>second heading</h5>
+    <h5>third heading</h5><hr>
+
+    <button onclick="chgbtn()">CLICK HERE</button>
+    <button onclick="chgbtn2()">CLICK HERE</button>
+    <button onclick="chgbtn3()">CLICK HERE</button><hr><hr>
+
+
+    <p class="green">Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>
+        Debitis ipsum ea iure eos commodi, omnis, molestiae vero, <br>
+        expedita corporis maxime earum voluptatem inventore obcaecati <br>
+        culpa ipsam placeat dignissimos rerum necessitatibus.</p><br><br>
+
+
+
+
+    <p class="red">Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>
+            Debitis ipsum ea iure eos commodi, omnis, molestiae vero, <br>
+            expedita corporis maxime earum voluptatem inventore obcaecati <br>
+            culpa ipsam placeat dignissimos rerum necessitatibus.</p><br><br>
+
+
+
+
+    <p class="blue">Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>
+                Debitis ipsum ea iure eos commodi, omnis, molestiae vero, <br>
+                expedita corporis maxime earum voluptatem inventore obcaecati <br>
+                culpa ipsam placeat dignissimos rerum necessitatibus.</p><hr>
+
+
+
+
+
+
+    <button onclick="a1()">CLICK HERE</button>
+    <button onclick="a2()">CLICK HERE</button>
+    <button onclick="a3()">CLICK HERE</button>
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
+
+<script>
+
+    let h1=document.querySelector("h1")
+    
+    function chgbtn(){
+        // var h1=document.querySelector("h1")
+
+        h1.style.color="red"
+    }
+
+    function chgbtn2(){
+        let h3 =document.querySelectorAll("h3")
+
+        for (let i=0; i<=h3.length; i++){
+            h3[i].style.color="green"
+        }
+
+        
+    }
+
+    function chgbtn3(){
+        let h5 =document.querySelectorAll("h5")
+
+        for (let i=0; i<=h5.length; i++){
+            h5[i].style.color="blue"
+        }
+    }
+
+
+    function a1(){
+        let k1 =document.querySelectorAll(".green")
+
+        for (let i=0; i<=k1.length; i++){
+            k1[i].style.color="green"
+        }
+    }
+
+
+    function a2(){
+        let k2 =document.querySelectorAll(".red")
+
+        for (let i=0; i<=k2.length; i++){
+            k2[i].style.color="red"
+        }
+    }
+
+
+    function a3(){
+        let k3 =document.querySelectorAll(".blue")
+
+        for (let i=0; i<=k3.length; i++){
+            k3[i].style.color="blue"
+        }
+    }
+
+</script>
