@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <center>
+        <label for="">enter age</label>
+        <input type="text" placeholder="enter age" id="a1"><br><br><br>
+
+        <p id="ans"></p>
+
+        <button onclick="age()">CKICK HERE</button>
+    </center>
+    
+</body>
+</html>
+
+<script>
+
+    let a=document.getElementById("a1").value;
+
+    // let k=document.getElementById("#age")
+
+    function age(){
+        if (a==18){
+            document.getElementById("ans").innerHTML="You are just old enough to drive in India!"
+        }else if (a<18){
+            document.getElementById("ans").innerHTML="You can't drive in India"
+        }else{
+            document.getElementById("ans").innerHTML=" You can drive in India!"
+        }
+    }
+
+</script>

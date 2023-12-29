@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <center>
+
+        <label for="">enter first value</label>
+        <input type="text" placeholder="enter value" id="a1"> <br><br><br>
+
+
+        <label for="">enter second value</label>
+        <input type="text" placeholder="enter value" id="a2"> <br><br><br>
+
+
+        <label for="">enter third value</label>
+        <input type="text" placeholder="enter value" id="a3"> <br><br><br>
+
+
+        <label for="">enter fourth value</label>
+        <input type="text" placeholder="enter value" id="a4"> <br><br><br><br>
+
+        <h1 id="ans"></h1><br><br><br><br>
+
+        <hr>
+
+        <button onclick="add()">Addition</button>
+        <button onclick="sub()">Subtraction</button>
+        <button onclick="mul()">Multiplication</button>
+
+
+
+    </center>
+    
+</body>
+</html>
+
+<script>
+
+    // document.getElementById("ans").addEventListener("click",add)
+
+    function add(){
+        let first=document.getElementById("a1").value;
+        let second=document.getElementById("a2").value;
+        let third=document.getElementById("a3").value;
+        let fourth=document.getElementById("a4").value;
+
+        let m= +first + +second + +third + +fourth
+
+        document.getElementById("ans").innerHTML="sum of four number =" +m
+    }
+
+
+    // document.getElementById("ans").addEventListener("click",sub)
+
+    function sub(){
+        let first=document.getElementById("a1").value;
+        let second=document.getElementById("a2").value;
+        let third=document.getElementById("a3").value;
+        let fourth=document.getElementById("a4").value;
+
+        let m= +first - +second - +third - +fourth
+
+        document.getElementById("ans").innerHTML="Subtraction of four number =" +m
+    }
+
+
+    function mul(){
+        let first=document.getElementById("a1").value;
+        let second=document.getElementById("a2").value;
+        let third=document.getElementById("a3").value;
+        let fourth=document.getElementById("a4").value;
+
+        let m= +first * +second * +third * +fourth
+
+        document.getElementById("ans").innerHTML="  Multiplication of four number =" +m
+    }
+</script>

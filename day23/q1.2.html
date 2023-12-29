@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <center>
+
+        <label for="">enter first value</label>
+        <input type="text" placeholder="enter value" id="a1"> <br><br><br>
+
+
+        <label for="">enter second value</label>
+        <input type="text" placeholder="enter value" id="a2"> <br><br><br>
+
+        <h1 id="ans"></h1><br><br><br><br>
+
+        <hr>
+
+        <button onclick="div()">Division</button>
+
+    </center>    
+    
+</body>
+</html>
+
+<script>
+    function div(){
+        let first=document.getElementById("a1").value;
+        let second=document.getElementById("a2").value;
+       
+
+        let m= +first / +second
+
+        document.getElementById("ans").innerHTML="division of two number =" +m
+    }
+</script>
