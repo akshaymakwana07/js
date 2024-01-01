@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <center>
+        <label for="">enter string</label>
+        <input type="text" id="a1" placeholder="enter string">
+    </center>
+    
+</body>
+</html>
+
+<script>
+
+    function namecheck(str){
+        if(str===""){
+            throw new Error("String must contain some characters")
+        }else{
+            console.log("successfulll",str)
+        }
+    }
+
+    try{
+        namecheck(document.getElementById("a1").value)
+    }catch(k){
+        console.log("Error :",k.message)
+    }
+</script>

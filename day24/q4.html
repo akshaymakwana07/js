@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <label for="">enter number</label>
+        <input type="text" id="a1" placeholder="enter number"> <br>
+
+        <label for="">enter number</label>
+        <input type="text" id="a2" placeholder="enter number">
+
+    </center>
+</body>
+</html>
+
+<script>
+    function number(k1,k2){
+        if(k2<=0){
+            throw new Error("Number not divisible by 0")
+        } else{
+            console.log("division :"+k1/k2)
+        }
+
+    }
+
+    try{
+            number(document.getElementById("a1").value,document.getElementById("a2").value)
+
+        }catch(k){
+            console.log("Error:",k.message)
+        }
+</script>

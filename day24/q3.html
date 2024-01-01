@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <center>
+        <label for="">enter your age</label>
+        <input type="text" id="a1" placeholder="enter age">
+    </center>
+    
+</body>
+</html>
+
+<script>
+
+    function vote(age){
+        if(age<18){
+            throw new Error("Not eligible to vote")
+        }else{
+            console.log("you can vote",age)
+        }
+    }
+
+    try{
+        vote(document.getElementById("a1").value)
+    }catch(a){
+        console.log("Error:",a.message)
+    }
+</script>
