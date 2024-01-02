@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <center>
+        <form action="" id="regform">
+        <label for="">Enter Your Name</label>
+        <input type="text" placeholder="Enter Name" id="en"><br><br><br>
+
+        <label for="">Enter Your Phone Number</label>
+        <input type="text" placeholder="Enter Number" id="ph"><br><br><br>
+
+        <label for="">Enter Your Email</label>
+        <input type="text" placeholder="Enter Email" id="ey"><br><br><br>
+
+        
+        <label for="">Password</label>
+        <input type="password" placeholder="password" id="ps"><br><br><br>
+
+        <label for="">Confirm Password</label>
+        <input type="password" placeholder="password" id="cps"><br><br><br>
+
+
+        <button type="submit" id="singup">Submit</button> <br><br><br>
+
+
+        <span id="err" style="color: red;"></span>
+        </form>
+    </center>
+    
+</body>
+</html>
+
+<script>
+    document.getElementById("regform").onsubmit=function(event){
+        try{
+           var name = document.getElementById("en").value;
+           var mobail = document.getElementById("ph").value;
+           var email = document.getElementById("ey").value;
+           var password = document.getElementById("ps").value;
+           var confirmpassword = document.getElementById("cps").value;
+
+           if(/\d/.test(name)){
+            throw new Error("Invalid Name")
+           }
+
+           if(!/\d{10}/.test(mobail)){
+            throw new Error("Invalid mobail Number")
+           }
+
+           if(!/^[\w-/.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email)){
+            throw new Error("Invalid email")
+           }
+
+           if(password != confirmpassword){
+            throw new Error ("Incorrect Password")
+           }
+
+           alert("successfull")
+        }catch(error){
+
+            event.preventDefault()
+            document.getElementById("err").innerText=error.message
+
+            // console.log("err"),error.message
+        }
+    }
+</script>
