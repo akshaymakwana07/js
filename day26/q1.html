@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <center>
+        <form action="" id="regform">
+
+
+        <label for="">Enter Your Name</label>
+        <input type="text" placeholder="Enter Name" id="name"><br><br><br>
+
+        <label for="">Enter Your Phone Number</label>
+        <input type="text" placeholder="Enter Number" id="numbar"><br><br><br>
+
+        <label for="">Enter Your Email</label>
+        <input type="text" placeholder="Enter Email" id="email"><br><br><br>
+
+        
+        <label for="">Password</label>
+        <input type="password" placeholder="password" id="ps"><br><br><br>
+
+        <label for="">Confirm Password</label>
+        <input type="password" placeholder="password" id="cps"><br><br><br>
+
+
+        <button type="submit">Submit</button>
+
+
+        
+        </form>
+    </center>
+    
+</body>
+</html>
+
+<script>
+
+    $(document).ready(function(){
+        
+
+        $("#regform").submit(function(){
+            let isvalid=true;
+            var name = $("#name").val();
+
+            if(name==""){
+                isvalid=false;
+                alert("enter your name")
+            }
+
+            var num=$("#numbar").val()
+            var aks=/^\d{10}$/
+
+            if(num=="" || !aks.test(num)){
+                isvalid=false;
+                alert("enter valid numbar")
+            }
+
+            var email=$("#email").val()
+                if(email===""){
+                    isvalid=false
+                    alert("enter valid email")
+                }else if(!email.endsWith("@gmail.com")){
+                    isvalid=false
+                    alert("enter @gmail.com compalsary")
+                }
+
+                var pwsd=$("#ps").val()
+                var cpwsd=$("#cps").val()
+
+                if(pwsd !== cpwsd){
+                    isvalid=false
+                    alert("Plase enter password and conform password")
+                }
+            
+        })
+    })
+</script>
