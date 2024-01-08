@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    class Car{
+
+        constructor(brand,color,price,year,speed){
+            this.brand=brand
+            this.color=color
+            this.price=price
+            this.year=year
+            this.speed=speed
+        }
+    }
+
+    class ElecticCar extends Car{
+
+        constructor(brand,color,price,year,speed){
+            super(brand,color,price,year,speed)
+
+        }
+    }
+
+
+
+
+    const a1 = new Car("BMW","red","$9999",2015,480)
+    const a2 = new Car("ODI","pink","$787848",2020,500)
+    console.log(a1)
+    console.log(a2)
+</script>

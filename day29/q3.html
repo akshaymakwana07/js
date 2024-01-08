@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+    class animal{
+         
+        constructor(animalname,color,age,place,size){
+            this.animalname=animalname
+            this.color=color
+            this.age=age
+            this.place=place
+            this.size=size
+        }
+    }
+
+    class animalchild extends animal{
+        constructor(animalname,color,age,place,size){
+            super(animalname,color,age,place,size)
+        }
+    }
+
+
+    class animalchild2 extends animal{
+        constructor(animalname,color,age,place,size){
+            super(animalname,color,age,place,size)
+        }
+    }
+
+
+    const ak1 = new animal ("lion","yellow","9 Year","Girnar",2.3)
+    const ak2 = new animal ("jiraf","white","5 year","Girnar",9.2)
+    const ak3 = new animal ("tiger","black","6 year","Girnar",3.2)
+
+    console.log(ak1)
+    console.log(ak2)
+    console.log(ak3)
+</script>
