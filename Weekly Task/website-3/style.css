@@ -1,0 +1,168 @@
+|* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.sub-header{
+    width: 80%;
+    height: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.logo{
+    width: 15%;
+    height: 70px;
+    /* border: 1px solid black; */
+}
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav {
+    width: 30%;
+    height: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+.nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* justify-content: center;     */
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 100%;
+}
+.nav ul li{
+    list-style: none;
+    
+}
+
+
+
+  .search{
+    width: 30%;
+    height: 70%;
+    position: relative;
+     /* border-radius: 25px;  */
+    float: left;
+    margin: 10px;
+    line-height: 30px;
+    /* border: 1px solid red; */
+}
+
+.search i{
+    position: absolute;
+    top:8px;
+    left: 15px;
+}
+
+.search input{
+    padding-left: 35px;
+    /* border-radius: 25px;  */
+    width: 100%;
+    height: 100%;
+    background-color: #F5F5F5;
+    outline: none;
+    border: none;
+    
+}
+
+.icon-1{
+    width: 20%;
+    height: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.icon-1 h5 {
+    font-weight:350;
+}
+
+
+#heart{
+    font-size: 23px;
+    margin: 10px;
+    float: left;
+    padding: 3px 10px;
+    border-radius: 50%;
+    
+}
+
+
+
+
+
+#bag{
+    font-size: 23px;
+    /* margin: 10px; */
+    float: left;
+    padding: 3px 10px;
+    border-radius: 50%;
+}
+
+
+.men-1{
+    width: 100%;
+    height: 100vh;
+    border: 1px solid black;
+}
+
+.war-1{
+    width: 100%;
+    height: 100vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+}
+.mn-1{
+    width: 80%;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.me-1{
+    width: 60%;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.topwear{
+    width: 32%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.me-2{
+    width: 30%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+   
+
+
+
+
+
