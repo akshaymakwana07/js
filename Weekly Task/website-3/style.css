@@ -382,6 +382,20 @@ header{
     height: 50%;
     margin-top: 20px;
 }
+
+
+
+
+
+
+
+
+
+@media(max-width:480px){
+    header {
+        display: none;
+    }
+}
    
 
 
