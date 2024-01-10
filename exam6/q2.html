@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    class Instrument{
+        playSound(){
+            return "sound..."
+        }
+    }
+
+    class Guitar extends Instrument{
+        playSound(){
+            console.log("Strumming the guitar strings")
+        }
+    }
+
+    class Piano extends Instrument{
+        playSound(){
+            console.log("Pressing the piano keys")
+        }
+    }
+
+    const gui = new Guitar()
+    const pi = new Piano()
+
+    gui.playSound()
+    pi.playSound()
+
+    
+</script>
