@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            width: 100%;
+            height: 500px;
+        }
+        div img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div>
+        <img src="image/h1_hero1.jpg" alt="">
+        <img src="image/h1_hero2.jpg" alt="">
+
+        <button onclick="stop()">stop</button>
+    </div>
+</body>
+</html>
+
+<script>
+
+    let pushpa =document.querySelectorAll("img")
+    let kgf=0;
+    let interval
+
+    function pushparaj(index){
+        for(let i=0; i<pushpa.length; i++){
+            pushpa[i].style.display="none"
+        }
+        pushpa[index].style.display="block"
+    }
+
+    function strpushpa(){
+     interval =   setInterval(()=>{
+            pushparaj(kgf)
+            kgf++
+
+            if(kgf >= pushpa.length){
+                kgf=0
+            }
+        },2000)
+    }
+
+    function stop(){
+        clearInterval (interval)
+    }
+    
+    
+
+    strpushpa()
+    pushparaj(kgf)
+</script>

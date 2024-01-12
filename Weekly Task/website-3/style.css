@@ -383,6 +383,1220 @@ header{
     margin-top: 20px;
 }
 
+.text-1{
+    width: 100%;
+    height: 100px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.tex-1{
+    width: 11%;
+    height: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.slider-1{
+    width: 100%;
+    height: 500px;
+    /* border: 1px solid black; */
+}
+
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: #EEE;
+}
+
+.carousel-cell {
+  width: 33%;
+  height: 500px;
+  margin-right: 10px;
+  /* background: #8C8; */
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  /* content: counter(carousel-cell); */
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+.carousel-cell img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.slider-2{
+    width: 100%;
+    height: 300px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.sli-1{
+    width: 80%;
+    height: 250px;
+    /* border: 1px solid black; */
+}
+
+
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel-2 {
+  /* background: #EEE; */
+}
+
+.carousel-cell-2 {
+  width: 12%;
+  height: 200px;
+  margin-right: 10px;
+  /* background: #8C8; */
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+  text-align: center;
+}
+
+/* cell number */
+.carousel-cell-2:before {
+  display: block;
+  text-align: center;
+  /* content: counter(carousel-cell); */
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+.carousel-cell-2 img {
+    width: 100%;
+    height: 90%;
+}
+
+.carousel-cell-2 h5 {
+    font-size: 15px;
+}
+
+
+.photo-1{
+    width: 100%;
+    height: 160px;
+    /* border: 1px solid black; */
+}
+
+.photo-1 img{
+    width: 100%;
+    height: 100%;
+}
+
+.design-1{
+    width: 100%;
+    height: 500px;
+    /* border: 1px solid black; */
+}
+.des-1{
+    width: 100%;
+    height: 60px;
+    /* border: 1px solid black; */
+    text-align: center;
+    padding-top: 20px;
+}
+.des-2{
+    width: 100%;
+    height: 440px;
+    /* border: 1px solid black; */
+    display: flex;
+}
+.dg-1{
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+.dg-1 img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+.trending-1{
+    width: 100%;
+    height: 800px;
+    /* border: 1px solid black; */
+}
+.tred-1{
+    width: 100%;
+    height: 60px;
+    /* border: 1px solid black; */
+    text-align: center;
+    padding-top: 10px;
+}
+.tred-2{
+    width: 100%;
+    height: 740px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.td{
+    width: 16%;
+    height: 370px;
+    /* border: 1px solid black; */
+}
+.td img{
+    width: 100%;
+    height: 100%;
+}
+
+.slider-3{
+    width: 100%;
+    height: 450px;
+    /* border: 1px solid black; */
+    text-align: center;
+}
+
+
+
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel-3 {
+  /* background: #EEE; */
+}
+
+.carousel-cell-3 {
+  width: 25%;
+  height: 400px;
+  margin-right: 10px;
+  /* background: #8C8; */
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+/* cell number */
+.carousel-cell-3:before {
+  display: block;
+  text-align: center;
+  /* content: counter(carousel-cell); */
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+.carousel-cell-3 img{
+    width: 100%;
+    height: 100%;
+}
+.txtx{
+    width: 100%;
+    height: 40px;
+    /* border: 1px solid black; */
+    text-align: center;
+}
+
+.photo-2{
+    width: 100%;
+    height: 400px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.php-1{
+    width: 49.5%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+.php-1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.photo-3{
+    width: 100%;
+    height: 400px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+
+.php-2{
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+.php-2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.benar-1{
+    width: 100%;
+    height: 180px;
+    /* border: 1px solid black; */
+    padding-top: 10px;
+}
+.benar-1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.bag-1{
+    width: 100%;
+    height: 400px;
+    /* border: 1px solid black; */
+}
+
+.ba-1{
+    width: 100%;
+    height: 60px;
+    /* border: 1px solid black; */
+    text-align: center;
+    padding-top: 20px;
+}
+
+.ba-2{
+    width: 100%;
+    height: 340px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.catbag-1{
+    width: 16%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+
+.catbag-1 img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.slider-4{
+    width: 100%;
+    height: 500px;
+    /* border: 1px solid black; */
+}
+
+
+  /* external css: flickity.css */
+
+  * { box-sizing: border-box; }
+
+  body { font-family: sans-serif; }
+
+  .carousel-4 {
+    /* background: #EEE; */
+  }
+
+  .carousel-cell-4 {
+    width: 32%;
+    height: 500px;
+    margin-right: 10px;
+    /* background: #8C8; */
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+  }
+
+  /* cell number */
+  .carousel-cell-4:before {
+    display: block;
+    text-align: center;
+    /* content: counter(carousel-cell); */
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+  }
+
+  .carousel-cell-4 img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .accsesories{
+    width: 100%;
+    height: 400px;
+    /* border: 1px solid black; */
+    
+  }
+
+  .acc-1{
+    width: 100%;
+    height: 50px;
+    /* border: 1px solid black; */
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .acc-2{
+    width: 100%;
+    height: 350px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .acs-1{
+    width: 70%;
+    height: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    
+  }
+
+  .acss{
+    width: 23%;
+    height: 100%;
+    /* border: 1px solid black; */
+  }
+
+  .acss img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .slider-5{
+    width: 100%;
+    height: 600px;
+    /* border: 1px solid black; */
+    background-image: url(image/bg-web-mc-land-page.svg);
+  background-size: cover;
+  background-position: center;
+  }
+  .slider-5 h4 {
+    text-align: center;
+  }
+
+
+
+  /* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel-5 {
+  /* background: #EEE; */
+  
+}
+
+.carousel-cell-5 {
+  width: 20%;
+  height: 550px;
+  margin-right: 10px;
+  /* background: #8C8; */
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+  
+}
+
+.carousel-cell.is-selected {
+  /* background: #ED2; */
+  
+}
+
+/* cell number */
+.carousel-cell-5:before {
+  display: block;
+  text-align: center;
+  /* content: counter(carousel-cell); */
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+.carousel-cell-5 img{
+    width: 100%;
+    height: 80%;
+}
+
+#ak1{
+    font-weight: bolder;
+}
+
+#ak2{
+    color: #26C36C;
+}
+
+
+
+
+
+
+
+
+
+
+  .txtx-2{
+    width: 100%;
+    height: 40px;
+    /* border: 1px solid black; */
+    text-align: center;
+}
+
+.photo-4{
+    width: 100%;
+    height: 400px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.php-3{
+    width: 49.5%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+.php-3 img {
+    width: 100%;
+    height: 100%;
+}
+
+.photo-5{
+    width: 100%;
+    height: 400px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+
+.php-4{
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+.php-4 img {
+    width: 100%;
+    height: 100%;
+}
+
+.benar-2{
+    width: 100%;
+    height: 170px;
+    /* border: 1px solid black; */
+    padding-top: 10px;
+}
+.benar-2 img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.benar-3{
+    width: 100%;
+    height: 170px;
+    /* border: 1px solid black; */
+    padding-top: 10px;
+}
+.benar-3 img{
+    width: 100%;
+    height: 100%;
+}
+
+
+footer{
+    width: 100%;
+    height: 300px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #181818;
+}
+.foot-1{
+    width: 80%;
+    height: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+}
+.ft-1{
+    width: 24%;
+    height: 100%;
+    /* border: 1px solid black; */
+    /* padding-top: 80px; */
+}
+
+.ft-1 h3{
+    padding-top: 50px;
+    color: #FDD835;
+}
+.ft-1 h4{
+    font-size: 17px;
+    color: #FDD835;
+}
+.ft-1 p{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+.ft-1 h5{
+    padding-top: 95px;
+    color: #FDD835;
+    font-size: 17px;
+}
+.ft-1 i{
+    padding-left: 10px;
+}
+
+.ft-1 input{
+    border: none;
+    border-bottom: 3px solid #FDD835;
+}
+
+.ft-1 button{
+    width: 100px;
+    height: 40px;
+    /* margin-right: 10px; */
+    background-color: #FDD835;
+    border: none;
+}
+
+.footer-2{
+    width: 100%;
+    height: 100px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #181818;
+}
+.foot-2{
+    width: 80%;
+    height: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 3px solid darkgray;
+}
+
+.ft-2{
+    width: 24%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+.ft-2 h5 {
+    color: #FDD835;
+    font-size: 17px;
+}
+
+.ft-2 p{
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+.ftr{
+    width: 100%;
+    height: 60px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+}
+.ftrr{
+    width: 49%;
+    height: 40px;
+    /* border: 1px solid black; */
+}
+.ftrr img {
+    width: 100%;
+    height: 100%;
+}
+.ftr-2{
+    width: 100%;
+    height: 40px;
+    /* border: 1px solid black; */
+}
+.ftr-2 img {
+    width: 80%;
+    height: 70%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:980px){
+    header {
+        display: none;
+    }
+
+    .text-1{
+        width: auto;
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .tex-1{
+        width: 11%;
+        height: auto;
+        text-align: center;
+        
+    }
+    .tex-1 h5 {
+        font-size: 15px;
+    }
+
+    .slider-1{
+        width: auto;
+        height: auto;
+    }
+
+    .carousel {
+        width: auto;
+        height: auto;
+    }
+    .carousel-cell{
+        width: 33%;
+        height: auto;
+    }
+
+    .slider-2{
+        width: auto;
+        height: auto;
+        padding-top: 20px;
+    }
+    .sli-1{
+        width: 100%;
+        height: auto;
+    }
+    
+    .carousel-2{
+        width: auto;
+        height: auto;
+    }
+    .carousel-cell-2{
+        width: 15%;
+        height: 230px;
+    }
+    
+    .carousel-cell-2 h5 {
+        font-size: 18px;
+    }
+    .photo-1{
+        width: auto;
+        height: auto;
+        padding-top: 10px;
+    }
+
+    .design-1{
+        width: auto;
+        height: auto;
+    }
+    .des-1{
+        width: auto;
+        height: auto;
+    }
+    .des-2{
+        width: auto;
+        height: auto;
+    }
+    .dg-1{
+        width: auto;
+        height: auto;
+    }
+
+    .trending-1{
+        width: auto;
+        height: auto;
+    }
+    .tred-1{
+        width: auto;
+        height: auto;
+    }
+    .tred-2{
+        width: auto;
+        height: auto;
+    }
+    .td{
+        /* width: auto; */
+        height: auto;
+    }
+
+    .slider-3{
+        width: auto;
+        height: auto;
+    }
+
+    .carousel-3{
+        width: auto;
+        height: auto;
+    }
+    .carousel-cell-3{
+        /* width: auto; */
+        height: auto;
+    }
+
+    .txtx{
+        width: auto;
+        height: auto;
+    }
+
+    .photo-2{
+        width: auto;
+        height: auto;
+    }
+    .php-1{
+        height: auto;
+    }
+
+    .photo-3{
+        width: auto;
+        height: auto;
+    }
+    .php-2{
+        height: auto;
+    }
+
+    .benar-1 {
+        width: auto;
+        height: auto;
+    }
+
+    .bag-1{
+        width: auto;
+        height: auto;
+    }
+    
+    .ba-1{
+        width: auto;
+        height: auto;
+    }
+    .ba-2{
+        width: auto;
+        height: auto;
+    }
+    .catbag-1{
+        height: auto;
+    }
+    .slider-4{
+        width: auto;
+        height: auto;
+    }
+
+    .carousel-4{
+        width: auto;
+        height: auto;
+    }
+    .carousel-cell-4{
+        height: auto;
+    }
+
+    .accsesories{
+        width: auto;
+        height: auto;
+    }
+    .acc-1{
+        width: auto;
+        height: auto;
+    }
+    .acc-2{
+        width: auto;
+        height: auto;
+    }
+    .acs-1{
+        /* width: auto; */
+        height: auto;
+    }
+    .acss{
+        height: auto;
+    }
+
+    .slider-5{
+        width: auto;
+        height: auto;
+    }
+    .carousel-5{
+        width: auto;
+        height: auto;
+    }
+    .carousel-cell-5{
+        width: 23%;
+        height: auto;
+    }
+    .carousel-5 h5{
+        font-size: 20px;
+    }
+
+    .carousel-5 p{
+        font-size: 12px;
+    }
+
+    .txtx-2{
+        width: auto;
+        height: auto;
+    }
+
+    .photo-4{
+        width: auto;
+        height: auto;
+    }
+    .php-3{
+        height: auto;
+    }
+
+    .photo-5{
+        width: auto;
+        height: auto;
+    }
+    .php-4{
+        height: auto;
+    }
+
+    .benar-2{
+        width: auto;
+        height: auto;
+    }
+
+    .benar-3{
+        width: auto;
+        height: auto;
+    }
+
+    footer{
+        width: auto;
+        height: auto;
+    }
+    .foot-1{
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        /* justify-content: space-evenly; */
+    }
+    .ft-1{
+        width: auto;
+        height: auto;
+    }
+
+    .footer-2{
+        width: auto;
+        height: auto;
+    }
+    .foot-2{
+        width: 100%;
+        height: auto;
+        padding-top: 20px;
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+@media(max-width:720px){
+    header {
+        display: none;
+    }
+
+    .text-1{
+        width: auto;
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .tex-1{
+        width: 11%;
+        height: auto;
+        text-align: center;
+        
+    }
+    .tex-1 h5 {
+        font-size: 10px;
+    }
+
+    .slider-1{
+        width: auto;
+        height: auto;
+    }
+
+    .carousel {
+        width: auto;
+        height: auto;
+    }
+   .carousel-cell {
+    width: 50%;
+    height: auto;
+   }
+
+   .slider-2{
+    width: auto;
+    height: auto;
+    padding-top: 20px;
+}
+.sli-1{
+    width: 100%;
+    height: auto;
+}
+
+.carousel-2{
+    width: auto;
+    height: auto;
+}
+.carousel-cell-2{
+    width: 20%;
+    height: 230px;
+}
+
+.carousel-cell-2 h5 {
+    font-size: 15px;
+}
+.photo-1{
+    width: auto;
+    height: auto;
+    padding-top: 10px;
+}
+
+.design-1{
+    width: auto;
+    height: auto;
+}
+.des-1{
+    width: auto;
+    height: auto;
+}
+.des-2{
+    width: auto;
+    height: auto;
+}
+.dg-1{
+    width: auto;
+    height: auto;
+}
+
+.trending-1{
+    width: auto;
+    height: auto;
+}
+.tred-1{
+    width: auto;
+    height: auto;
+}
+.tred-2{
+    width: auto;
+    height: auto;
+}
+.td{
+    /* width: auto; */
+    height: auto;
+}
+
+.slider-3{
+    width: auto;
+    height: auto;
+}
+
+.carousel-3{
+    width: auto;
+    height: auto;
+}
+.carousel-cell-3{
+    /* width: auto; */
+    height: auto;
+}
+
+.txtx{
+    width: auto;
+    height: auto;
+}
+
+.photo-2{
+    width: auto;
+    height: auto;
+}
+.php-1{
+    height: auto;
+}
+
+.photo-3{
+    width: auto;
+    height: auto;
+}
+.php-2{
+    height: auto;
+}
+
+.benar-1 {
+    width: auto;
+    height: auto;
+}
+
+.bag-1{
+    width: auto;
+    height: auto;
+}
+
+.ba-1{
+    width: auto;
+    height: auto;
+}
+.ba-2{
+    width: auto;
+    height: auto;
+}
+.catbag-1{
+    height: auto;
+}
+.slider-4{
+    width: auto;
+    height: auto;
+}
+
+.carousel-4{
+    width: auto;
+    height: auto;
+}
+.carousel-cell-4{
+    height: auto;
+}
+.accsesories{
+    width: auto;
+    height: auto;
+}
+.acc-1{
+    width: auto;
+    height: auto;
+}
+.acc-2{
+    width: auto;
+    height: auto;
+}
+.acs-1{
+    /* width: auto; */
+    height: auto;
+}
+.acss{
+    height: auto;
+}
+
+
+.slider-5{
+    width: auto;
+    height: auto;
+}
+.carousel-5{
+    width: auto;
+    height: auto;
+}
+.carousel-cell-5{
+    width: 40%;
+    height: auto;
+}
+.carousel-5 h5{
+    font-size: 18px;
+}
+
+.carousel-5 p{
+    font-size: 12px;
+}
+
+.txtx-2{
+    width: auto;
+    height: auto;
+}
+
+.photo-4{
+    width: auto;
+    height: auto;
+}
+.php-3{
+    height: auto;
+}
+
+.photo-5{
+    width: auto;
+    height: auto;
+}
+.php-4{
+    height: auto;
+}
+.benar-2{
+    width: auto;
+    height: auto;
+}
+
+.benar-3{
+    width: auto;
+    height: auto;
+}
+
+footer{
+    width: auto;
+    height: auto;
+}
+.foot-1{
+    width: auto;
+    height: auto;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+}
+.ft-1{
+    width: 49%;
+    height: auto;
+}
+
+.footer-2{
+    width: auto;
+    height: auto;
+}
+.foot-2{
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+}
+
+
+}
+
+
+
+
+
+
 
 
 
@@ -395,6 +1609,269 @@ header{
     header {
         display: none;
     }
+
+    .text-1{
+        width: auto;
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .tex-1{
+        width: 11%;
+        height: auto;
+        text-align: center;
+        
+    }
+    .tex-1 h5 {
+        font-size: 8px;
+    }
+
+    .slider-1{
+        width: auto;
+        height: auto;
+    }
+
+    .carousel {
+        width: auto;
+        height: auto;
+    }
+    .carousel-cell{
+        width: auto;
+        height: auto;
+    }
+
+    .slider-2{
+        width: auto;
+        height: auto;
+        padding-top: 20px;
+    }
+    .sli-1{
+        width: 100%;
+        height: auto;
+    }
+
+    .carousel-2{
+        width: auto;
+        height: auto;
+    }
+    .carousel-cell-2{
+        width: 30%;
+        height: 230px;
+    }
+
+    .carousel-cell-2 h5 {
+        font-size: 12px;
+    }
+
+    .photo-1{
+        width: auto;
+        height: auto;
+        padding-top: 10px;
+    }
+
+    .design-1{
+        width: auto;
+        height: auto;
+    }
+    .des-1{
+        width: auto;
+        height: auto;
+    }
+    .des-2{
+        width: auto;
+        height: auto;
+    }
+    .dg-1{
+        width: auto;
+        height: auto;
+    }
+
+    .trending-1{
+        width: auto;
+        height: auto;
+    }
+    .tred-1{
+        width: auto;
+        height: auto;
+    }
+    .tred-2{
+        width: auto;
+        height: auto;
+    }
+    .td{
+        /* width: auto; */
+        height: auto;
+    }
+
+    .slider-3{
+        width: auto;
+        height: auto;
+    }
+
+    .carousel-3{
+        width: auto;
+        height: auto;
+    }
+    .carousel-cell-3{
+        /* width: auto; */
+        height: auto;
+    }
+    .txtx{
+        width: auto;
+        height: auto;
+    }
+
+    .photo-2{
+        width: auto;
+        height: auto;
+    }
+    .php-1{
+        height: auto;
+    }
+
+    .photo-3{
+        width: auto;
+        height: auto;
+    }
+    .php-2{
+        height: auto;
+    }
+
+    .benar-1 {
+        width: auto;
+        height: auto;
+    }
+
+    .bag-1{
+        width: auto;
+        height: auto;
+    }
+
+    .ba-1{
+        width: auto;
+        height: auto;
+    }
+    .ba-2{
+        width: auto;
+        height: auto;
+    }
+    .catbag-1{
+        height: auto;
+    }
+
+    .slider-4{
+        width: auto;
+        height: auto;
+    }
+
+    .carousel-4{
+        width: auto;
+        height: auto;
+    }
+    .carousel-cell-4{
+        height: auto;
+    }
+
+    .accsesories{
+        width: auto;
+        height: auto;
+    }
+    .acc-1{
+        width: auto;
+        height: auto;
+    }
+    .acc-2{
+        width: auto;
+        height: auto;
+    }
+    .acs-1{
+        /* width: auto; */
+        height: auto;
+    }
+    .acss{
+        height: auto;
+    }
+
+
+    .slider-5{
+        width: auto;
+        height: auto;
+    }
+    .carousel-5{
+        width: auto;
+        height: auto;
+    }
+    .carousel-cell-5{
+        width: 40%;
+        height: auto;
+    }
+    .carousel-5 h5{
+        font-size: 15px;
+    }
+
+    .carousel-5 p{
+        font-size: 8px;
+    }
+
+
+
+    .txtx-2{
+        width: auto;
+        height: auto;
+    }
+
+    .photo-4{
+        width: auto;
+        height: auto;
+    }
+    .php-3{
+        height: auto;
+    }
+
+    .photo-5{
+        width: auto;
+        height: auto;
+    }
+    .php-4{
+        height: auto;
+    }
+
+    .benar-2{
+        width: auto;
+        height: auto;
+    }
+
+    .benar-3{
+        width: auto;
+        height: auto;
+    }
+
+    footer{
+        width: auto;
+        height: auto;
+    }
+    .foot-1{
+        width: auto;
+        height: auto;
+        flex-wrap: wrap;
+        /* justify-content: space-evenly; */
+    }
+    .ft-1{
+        width: 49%;
+        height: auto;
+    }
+    .footer-2{
+        width: auto;
+        height: auto;
+    }
+    .foot-2{
+        width: 100%;
+        height: auto;
+        padding-top: 20px;
+    }
+
+    
+
+    
 }
    
 
