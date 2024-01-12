@@ -11,6 +11,7 @@ header{
     display: flex;
     justify-content: space-evenly;
     
+    
 }
 .sub-header{
     width: 80%;
@@ -119,12 +120,59 @@ header{
 }
 
 
+#header{
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    display: none;
+}
+
+.head-main-1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+
+.he-1{
+    width: 20%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+
+.he-1 a{
+    font-size: 30px;
+}
+
+.he-2{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 1px solid black; */
+}
+
+.he-2 i{
+    /* padding: 10px; */
+    font-size: 30px;
+}
+
+
+
+
+
+
+
 .men-1{
     width: 100%;
     height: 270vh;
     /* border: 1px solid black;  */
-
     display: none;
+    position: absolute;
+    left: 0;
+    top: 70px;
 }
 
 .war-1{
@@ -133,6 +181,7 @@ header{
     /* border: 1px solid black; */
     display: flex;
     justify-content: space-evenly;
+    /* background-color: white; */
 }
 .mn-1{
     width: 80%;
@@ -140,6 +189,8 @@ header{
     /* border: 1px solid black; */
     display: flex;
     justify-content: space-evenly;
+    background-color: white;
+    z-index: 1;
 }
 
 .me-1{
@@ -215,6 +266,9 @@ header{
     height: 270vh;
     /* border: 1px solid black; */
     display: none;
+    position: absolute;
+    left: 0%;
+    top: 70px;
 }
 .wom-1{
     width: 100%;
@@ -230,6 +284,8 @@ header{
     /* border: 1px solid black; */
     display: flex;
     justify-content: space-evenly;
+    background-color: white;
+    z-index: 1;
 }
 
 .wn-1{
@@ -306,6 +362,9 @@ header{
     /* border: 1px solid black; */
 
     display: none;
+    position: absolute;
+    left: 0;
+    top: 70px;
 }
 .mob{
     width: 100%;
@@ -321,6 +380,8 @@ header{
     /* border: 1px solid black; */
     display: flex;
     justify-content: space-evenly;
+    background-color: white;
+    z-index: 1  ;
     
 }
 
@@ -1043,6 +1104,31 @@ footer{
 }
 
 
+.footer-3{
+    width: 100%;
+    height: 370vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #181818;
+}
+
+.foot-3{
+    width: 80%;
+    height: 100%;
+    border: 1px solid black;
+    padding-top: 50px;
+}
+
+.foot-3 h5 {
+    color: white;
+}
+
+.foot-3 h3{
+    color: white;
+}
+
+
 
 
 
@@ -1060,7 +1146,13 @@ footer{
 
 @media(max-width:980px){
     header {
-        display: none;
+        /* display: none; */
+        width: auto;
+        height: auto;
+    }
+    .sub-header{
+        width: 100%;
+        height: auto;
     }
 
     .text-1{
@@ -1318,6 +1410,15 @@ footer{
         height: auto;
         padding-top: 20px;
     }
+
+    .footer-3{
+        width: auto;
+        height: auto;
+    }
+    .foot-3{
+        width: auto;
+        height: auto;
+    }
     
     
 }
@@ -1332,6 +1433,44 @@ footer{
 @media(max-width:720px){
     header {
         display: none;
+    }
+
+    #header{
+        display: block;
+    }
+
+    .offcanvas{
+        width: auto;
+        height: auto;
+    }
+
+    .offcanvas-body{
+        width: auto;
+        height: auto;
+    }
+
+    .off-2{
+        width: auto;
+        height: auto;
+    }
+    .off-2-1{
+        width: auto;
+        height: auto;
+        padding-top: 10px;
+    }
+    .off-2-1 h5{
+        font-size: 17px;
+    }
+    
+
+    .off-3{
+        width: auto;
+        height: auto;
+        background-color: #F3F3F3;
+        margin-top: 100px;
+    }
+    .off-3 ul li{
+        list-style: none;
     }
 
     .text-1{
@@ -1589,6 +1728,15 @@ footer{
     padding-top: 20px;
 }
 
+.footer-3{
+    width: auto;
+    height: auto;
+}
+.foot-3{
+    width: auto;
+    height: auto;
+}
+
 
 }
 
@@ -1608,6 +1756,33 @@ footer{
 @media(max-width:480px){
     header {
         display: none;
+    }
+
+    #header{
+        display: block;
+    }
+
+    .offcanvas{
+        width: auto;
+        height: auto;
+    }
+
+    .offcanvas-body{
+        width: auto;
+        height: auto;
+    }
+
+    .off-2{
+        width: auto;
+        height: auto;
+    }
+    .off-2-1{
+        width: auto;
+        height: auto;
+        padding-top: 10px;
+    }
+    .off-2-1 h5{
+        font-size: 17px;
     }
 
     .text-1{
@@ -1868,6 +2043,18 @@ footer{
         height: auto;
         padding-top: 20px;
     }
+
+    .footer-3{
+        width: auto;
+        height: auto;
+    }
+    .foot-3{
+        width: auto;
+        height: auto;
+    }
+
+
+    
 
     
 
