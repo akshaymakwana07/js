@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <center>
+        <h1>Login Form</h1>
+
+        <form action="" id="login">
+            <label for="">enter email</label>
+            <input type="text" id="mail"><br><br><br>
+
+            <label for="">enter password</label>
+            <input type="password" id="pass"><br><br><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </center>
+    
+</body>
+</html>
+
+<script>
+    let login = document.getElementById("login")
+
+login.addEventListener("submit",function(event){
+    event.preventDefault()
+
+    let loginemail = document.getElementById("mail").value
+    let loginpassword = document.getElementById("pass").value
+
+    let storedusrer = JSON.parse(localStorage.getItem("users")) || []
+
+    let chack = storedusrer.find((a)=>{
+        return loginemail === a.email && loginpassword === a.password
+    })
+
+    if (chack){
+        alert("login")
+    }else{
+        alert("not login")
+    }
+
+    
+
+})
+</script>
+
+
+

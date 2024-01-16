@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Signup Form</h1>
+
+        <form action="" id="signup">
+            <label for="">enter email</label>
+            <input type="text" id="email"><br><br><br>
+
+            <label for="">enter number</label>
+            <input type="tel" id="number"><br><br><br>
+
+            <label for="">enter password</label>
+            <input type="password" id="password"><br><br><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </center>
+</body>
+</html>
+
+<script>
+    let signup = document.getElementById("signup")
+
+    signup.addEventListener("submit",function(event){
+        event.preventDefault()
+
+        let email = document.getElementById("email").value
+        let number= document.getElementById("number").value
+        let password = document.getElementById("password").value
+
+
+        let storedusrers=JSON.parse(localStorage.getItem("users")) ||[]
+
+        storedusrers.push({email,number,password})
+
+        localStorage.setItem("users",JSON.stringify(storedusrers))
+
+        console.log(storedusrers)
+    })
+    
+</script>
