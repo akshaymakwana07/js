@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<center>
+    
+    <input type="text" id="a1">
+    <button onclick="fetchdata()">submit</button>
+
+    <div id="main"></div>
+    
+</center>
+</body>
+</html>
+
+<script>
+
+    function fetchdata(){
+        document.getElementById("main").innerHTML=""
+        let name = document.getElementById("a1").value 
+        let api = "98be9a54"
+
+        fetch(`http://www.omdbapi.com/?apikey=${api}&t=${name}`)
+
+        .then(function(cat){
+            return cat.json()
+        })
+
+        .then(function(json){
+            console.log(json)
+            display(json)
+        })
+    }
+
+    function display(json){
+
+        let image = document.createElement("img")
+        image.setAttribute("src",json.Poster)
+
+        let title = document.createElement("h2")
+        title.innerHTML=json.Title
+
+        document.querySelector("#main").append(image,title)
+    }
+
+
+</script>
