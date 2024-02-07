@@ -52,10 +52,11 @@
             let price = document.createElement("h3")
             price.innerHTML=el.price
 
-            
-
             let delBtn = document.createElement("button")
             delBtn.innerHTML = "Delete"
+
+            let quantity = document.createElement("p")
+            quantity.innerHTML= "Quantity :" + el.quantity
 
             delBtn.addEventListener("click",function(){
                 prodects.splice(index,1)
@@ -63,7 +64,7 @@
                 displayCart()
             })
 
-            div.append(image, title, price, delBtn)
+            div.append(image, title, price, delBtn, quantity)
             document.getElementById("cart").append(div)
         })
     }
