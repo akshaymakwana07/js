@@ -118,3 +118,203 @@
 
     
 </script>
+
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-Management system</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+    <center>
+
+        <h1>Task Management System</h1>
+  
+  <form id="taskForm">
+    <label for="title">Title:</label> <br>
+    <input type="text" id="title" name="title" placeholder="Enter Title" required><br><br>
+
+    <label for="description" id="des">Description:</label> <br>
+    
+    <textarea id="description" name="description" placeholder="Enter Description" required></textarea><br><br>
+
+    <label for="dueDate">Due Date:</label> <br><br>
+    <input type="date" id="dueDate" name="dueDate" itemid="dueDate" required><br><br>
+
+    <label for="priority">Priority:</label> <br><br>
+
+    <select id="priority" name="priority" required>
+      <option value="low">Low</option>
+      <option value="medium">Medium</option>
+      <option value="high">High</option>
+    </select>
+
+    <br><br>
+
+    <button type="submit" id="add">Add Task</button>
+
+  </form>
+
+    </center>
+
+    <center>
+      <div id="tasklist">
+        <h4>FILTER:</h4> <br>
+        <select id="filter" name="filter" >
+          <option value="all">All</option>
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+  
+  
+        <h1>tasklist:</h1>
+  
+        <table border id="task" >
+          
+        </table>
+  
+      </div>
+      
+    </center>
+    
+</body>
+</html>
+
+<script>
+
+  let list=document.getElementById("taskForm")
+
+
+    list.addEventListener("submit",function(event){
+
+      event.preventDefault()
+
+    let title=document.getElementById("title").value 
+
+    let Description=document.getElementById("description").value
+
+    let dueDate=document.getElementById("dueDate").value
+
+    let priority=document.getElementById("priority").value
+
+    let ta={
+      id:Date.now(),
+      title,
+      Description,
+      dueDate,
+      priority
+    }
+
+    let show=JSON.parse(localStorage.getItem("da")) || [] 
+
+    show.push(ta)
+
+    localStorage.setItem("da",JSON.stringify(show))
+
+    // console.log(show)
+
+    dispaly(show)
+  
+  })
+  
+  function dispaly(show){
+
+    let task=document.getElementById("task")
+
+    task.innerHTML=""
+
+    let heading=document.createElement("tr")
+
+    heading.innerHTML=`<th>index</th>
+          <th>Title</th>
+          <th>Description</th>
+          <th>Date</th>
+          <th>priority</th>`
+
+    task.appendChild(heading)
+
+    show.map((show,i)=> {
+
+      let tasklist=document.createElement("tr")
+
+      tasklist.innerHTML=` <td>${i+1}</td>
+      <td>${show.title}</td> <td>${show.Description}</td> <td>${show.dueDate}</td> 
+      <td>${show.priority}</td> <td> <button class="edit" onclick="edittask(${show.id})">Edit</button></td>
+      <td> <button class="delete" onclick="deletetask(${show.id})">Delete</button></td>`
+
+      task.appendChild(tasklist)
+
+    })
+
+  }
+
+  let show_1=JSON.parse(localStorage.getItem("da")) || [] 
+
+  dispaly(show_1)
+
+  function edittask(id){
+
+    let show=JSON.parse(localStorage.getItem("da"))
+
+    let editedtask=show.find(task=> task.id === id)
+
+    if(editedtask){
+      
+      let newtitle=prompt("Enter New Title",editedtask.title)
+      
+      if(newtitle !== null){
+        editedtask.title=newtitle
+        localStorage.setItem("da",JSON.stringify(show))
+        dispaly(show)
+      }
+
+    }
+
+  }
+
+  function deletetask(id){
+
+    let show=JSON.parse(localStorage.getItem("da"))
+
+    show.map((el,i)=>{
+      if(el.id == id){
+        show.splice(i,1)
+        localStorage.setItem("da",JSON.stringify(show))
+        dispaly(show)
+      }
+    })
+  }
+
+  let filter=document.getElementById("filter")
+
+  filter.addEventListener("change",()=>{
+    let show=JSON.parse(localStorage.getItem("da"))
+    
+    if(filter.value == "all"){
+      dispaly(show)
+    }else{
+      let filtertask=show.filter((el)=>{
+        return  el.priority == filter.value 
+      })
+      console.log(filtertask)
+      dispaly(filtertask)
+    }
+
+  })
+
+  window.onload = function () {
+            display();
+        };
+
+</script> -->

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>final</title>
+    
+</head>
+<body>
+    <div id="main">
+        <div id="mn-1">
+        
+    <center>
+        <h1>Task Management System</h1>
+
+        <form id="frm">
+            <label for="">Title:</label><br>
+            <input type="text" id="title" required> <br><br>
+
+            <label for="">Description:</label><br>
+            <textarea id="description" name="description" required></textarea><br><br>
+            
+            <label for="">Due Date:</label><br>
+            <input type="date" id="date" name="duedate" itemid="date" required><br><br>
+
+            <label for="">Priority:</label><br>
+            <select name="" name="priority" id="priority" required>
+            <option value="low">low</option>
+            <option value="medium">medium</option>
+            <option value="hige">high</option>
+        </select><br><br><br>
+
+         <button type="submit">submit</button>
+        
+        </form>
+ 
+    </center>
+</div>
+<div id="mn-2">
+    
+    
+    <div id="tsk">
+        <h3>Filter:</h3>
+        <select name="filter" id="filter">
+            <option value="all">all</option>
+            <option value="low">low</option>
+            <option value="medium">medium</option>
+            <option value="hige">high</option>
+        </select>
+       
+
+    </div>
+
+
+
+    <ul id="tasklist"></ul>
+   
+</div>
+  
+    
+</div>
+</body>
+</html>
+
+<script>
+    let frm = document.getElementById("frm")
+
+  
+
+    frm.addEventListener("submit",function(event){
+        event.preventDefault()
+        let title = document.getElementById("title").value 
+        let description = document.getElementById("description").value 
+        let date= document.getElementById("date").value
+        let priority = document.getElementById("priority").value
+
+        let ob={
+            id:Date.now(),
+            title,
+            description,
+            date,
+            priority
+        }
+
+        let str=JSON.parse(localStorage.getItem("ak")) || []
+        str.push(ob)
+
+        localStorage.setItem("ak",JSON.stringify(str))
+        console.log(str)
+        dispaly()
+    })
+
+    function dispaly(){
+
+        let str=JSON.parse(localStorage.getItem("ak")) || []
+
+        let tasklist=document.getElementById("tasklist")
+        tasklist.innerHTML=""
+
+        
+
+        str.map((el)=>{
+
+            let heading = document.createElement("li")
+
+            heading.innerHTML=`
+                <b>${el.title}</b> 
+                <p>${el.description}</p>
+                <p>${el.date}</p> 
+                <p>${el.priority}</p>
+                <button id="butt-1"  onclick="edittask(${el.id})">edit</button>
+                <button id="butt-2" onclick="deletingtask(${el.id})">delete</button>
+            `
+
+            tasklist.appendChild(heading)
+        })
+        
+    }
+
+    
+    function edittask(id){
+
+        let str=JSON.parse(localStorage.getItem("ak")) || []
+
+        let edit=str.find(task=> task.id == id)
+
+        if(edit){
+            let newtitle=prompt("enter new title",edit.title)
+            if(newtitle !== null){
+            edit.title=newtitle
+            localStorage.setItem("ak",JSON.stringify(str))
+            dispaly()
+            }
+        }
+        
+        console.log(id)
+    }
+
+    dispaly()
+
+
+    function deletingtask(id){
+
+        let str=JSON.parse(localStorage.getItem("ak")) || []
+
+         str.map((el,i)=>{
+            if(el.id==id){
+                str.splice(i,1)
+                localStorage.setItem("ak",JSON.stringify(str))
+                dispaly()
+            }
+         })
+
+    }
+
+    
+    let filter= document.getElementById("filter")
+
+    filter.addEventListener("change",()=>{
+        let str=JSON.parse(localStorage.getItem("ak"))
+
+        if(filter.value == "all"){
+            dispaly(str)
+        }else{
+            let filtertask=str.filter((el)=>{
+                return el.priority == filter.value
+            })
+            console.log(filtertask)
+            dispaly(filtertask)
+        }
+
+    })
+
+    window.onload = function (){
+        dispaly();
+    }
+
+
+</script>

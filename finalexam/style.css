@@ -1,0 +1,39 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+#main{
+    width: 100%;
+    height: inherit;
+    border: 1px solid black;
+    display: flex;
+}
+
+#mn-1{
+    width: 50%;
+    height: inherit;
+    border: 1px solid black;
+}
+
+#mn-2{
+    width: 50%;
+    height: inherit;
+    border: 1px solid black;
+    text-align: center;
+}
+#tasklist{
+    list-style: none;
+}
+
+#butt-1{
+    color: white;
+    background-color: green;
+    border: none;
+}
+#butt-2{
+    color: white;
+    background-color: red;
+    border: none;
+}
