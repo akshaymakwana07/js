@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      div{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+        #giris {
+         border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            width: 22%;
+            
+            
+        }
+        
+
+        #photo{
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            
+        }
+
+        
+
+
+
+    </style>
+</head>
+<body>
+
+    <div id="cart"></div>
+    
+</body>
+</html>
+
+<script>
+    let prodects = JSON.parse(localStorage.getItem("cart")) || []
+
+    function displayCart(){
+        prodects.map((el)=>{
+            let div = document.createElement("div")
+            div.setAttribute("id","giris")
+           
+
+            let image = document.createElement("img")
+            image.setAttribute("src",el.image)
+            image.setAttribute("id", "photo")
+
+            let title = document.createElement("h6")
+            title.innerHTML=el.title
+
+            let price = document.createElement("h5")
+            price.innerHTML=el.price
+
+            div.append(image, title, price)
+            document.getElementById("cart").append(div)
+        })
+    }
+    
+    displayCart(prodects)
+</script>

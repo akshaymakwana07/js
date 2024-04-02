@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../weeklytask8/home.html">Home</a></li>
+                <li><a href="../weeklytask8/job.html">Applied Jobs</a></li>
+                <li><a href="../weeklytask8/bookmarek.html">Bookmark</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main">
+        <form id="jobform">
+
+            <label for="">Name:</label><br>
+            <input type="text" id="name1" required><br><br>
+
+            <label for="">Email:</label><br>
+            <input type="text" id="email1" required> <br><br>
+
+            <label for="">Job Type:</label><br>
+            <select id="jobtype1" required>
+                <option value="Full Time">Full Time</option>
+                <option value="Part Time">Part Time</option>
+                <option value="Freelance">Freelance</option>
+                <option value="Internship">Internship</option>
+            </select> <br><br>
+
+            <label for="">Expected Salary:</label><br>
+            <input type="number" id="salary" required><br><br>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+</center>
+</body>
+</html>
+
+<script>
+
+   let jobform = document.getElementById("jobform")
+
+   jobform.addEventListener("submit",()=>{
+
+   
+
+        let name1 = document.getElementById("name1").value
+        let email1 = document.getElementById("email1").value
+        let jobtype1 = document.getElementById("jobtype1").value
+        let salary = document.getElementById("salary").value
+       
+
+        let jobdata = {
+            name1:name1,
+            email: email1,
+            jobtype1:jobtype1,
+            salary:salary
+        }
+
+        let joblist = JSON.parse(localStorage.getItem("joblist")) || [];
+        joblist.push(jobdata)
+        localStorage.setItem("joblist",JSON.stringify(joblist));
+
+
+        alert("Job application submitted successfully!")
+    })
+
+</script>

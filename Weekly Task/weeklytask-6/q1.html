@@ -77,8 +77,17 @@
     </center>
 </div>
 
+
 <div class="man-2">
     <center>
+
+
+        <div id="search">
+            <input type="text" id="searchInput" placeholder="Search by title or ingredients">
+            <button onclick="search()">Search</button>
+        </div> <br><br>
+
+
         <h3>FILTER:</h3>
         <select name="filter" id="filter">
             <option value="all">All</option>
@@ -179,6 +188,22 @@
         })
     }
 
+
+    const recipes = [
+      { title: "Spaghetti Carbonara", ingredients: ["pasta", "eggs", "bacon"], cuisine: "italian" },
+      
+    ];
+
+    function search() {
+      const searchTerm = document.getElementById("searchInput").value.toLowerCase();
+      const searchResults = recipes.filter(recipe =>
+        recipe.title.toLowerCase().includes(searchTerm) ||
+        recipe.ingredients.some(ingredient => ingredient.toLowerCase().includes(searchTerm))
+      );
+     
+      console.log(searchResults);
+    }
+
     let filter=document.getElementById("filter")
 
     filter.addEventListener("change",()=>{
@@ -203,6 +228,17 @@ if(filter.value== "all"){
         akki();
     }
 </script>
+
+
+
+
+
+
+
+
+
+
+
 
 
 

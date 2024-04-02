@@ -1,0 +1,688 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+} 
+
+
+.navbar-brand h1 {
+    font-size: 25px;
+}
+.navbar-brand p {
+    font-size: 15px;
+}
+
+.navbar-brand h1:hover {
+    color: #1EB2A6;
+}
+
+
+.nav-item  a{
+    font-weight: bolder;
+}
+
+
+header {
+    width: 100%;
+    height: 100vh;
+    /* border: 1px solid black; */
+    background-image:  url(image/h1_hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+   
+   
+}
+#text {
+    /* border: 1px solid white; */
+    padding-top: 300px;
+    /* padding-left: 300px; */
+    text-align: center;
+
+}
+#text h1 {
+    font-size: 70px;
+
+}
+
+
+.luxury {
+    width: 100%;
+    height: 800px;
+    /* border: 1px solid black; */
+}
+.comfort {
+    width: 70%;
+    height: 600px;
+    /* border: 1px solid black; */
+}
+.luxu-1 {
+
+    width: 40%;
+    height: 500px;
+    /* border: 1px solid black; */
+}
+.luxu-1 img {
+    width: 100%;
+    height: 100%;
+}
+.luxu-2 {
+
+    width: 30%;
+    height: 500px;
+    /* border: 1px solid black; */
+    padding: 2px;
+}
+.luxu-2 h1 {
+    padding-top: 40px;
+}
+.luxu-2 button {
+    width: 150px;
+    height: 40px;
+    color: #E29C89;
+    border: 1px solid #E29C89;
+    border-radius: 10px;
+}
+.luxu-2 button:hover {
+    background-color: #E29C89;
+    color: white;
+}
+.luxu-3 {
+
+    width: 22%;
+    height: 600px;
+    /* border: 1px solid black; */
+}
+.luxu-3 img {
+    width: 100%;
+    height: 100%;
+   
+}
+
+
+
+.our-rooms {
+    width: 100%;
+    height: 800px;
+    /* border: 1px solid black; */
+}
+.our {
+    width: 100%;
+    height: 200px;
+    /* border: 1px solid black; */
+}
+.rooms {
+    width: 90%;
+    height: 600px;
+    /* border: 1px solid black; */
+}
+.rm {
+    width: 30%;
+    height: 100%;
+    /* border: 1px solid black; */
+    text-align: center;
+}
+.rm img {
+    width: 100%;
+    height: 80%;
+}
+.rm h1 {
+    font-size: 30px;
+}
+.rm h1:hover {
+    color: #E29C89;
+}
+
+
+
+
+
+.our-hotel {
+    width: 100%;
+    height: 900px;
+    /* border: 1px solid black; */
+}
+.hotel-1 {
+    width: 100%;
+    height: 300px;
+    /* border: 1px solid black; */
+    text-align: center;
+    
+}
+.hotel-2 {
+    width: 60%;
+    height: 500px;
+    /* border: 1px solid black; */
+}
+.htl {
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid black; */
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+.htl img {
+    width: 100%;
+    height: 100%;
+}
+.htl h2 {
+    padding-top: 100px;
+}
+.htl button {
+    width: 150px;
+    height: 40px;
+    border: 1px solid #E29C89;
+    background-color: black;
+    color: #E29C89;
+}
+.htl button:hover {
+    background-color: #E29C89;
+    color: white;
+}
+
+.video {
+    width: 100%;
+    height: 600px;
+    /* border: 1px solid black; */
+}
+.video-1 {
+    width: 90%;
+    height: 600px;
+    /* border: 1px solid black; */
+    background-image: url(image/video-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.video-1 img {
+    width: 15%;
+    height: 15%;
+
+}
+
+.our-guest {
+    width: 100%;
+    height: 800px;
+    /* border: 1px solid black; */
+}
+.offer {
+    width: 100%;
+    height: 200px;
+    /* border: 1px solid black; */
+}
+.guest {
+    width: 70%;
+    height: 600px;
+    /* border: 1px solid black; */
+}
+
+.gst {
+    width: 30%;
+    height: 500px;
+    /* border: 1px solid black; */
+    position: relative;
+    
+}
+.gst img{
+    width: 100%;
+    height: 100%;
+   
+  
+}
+.gst h2 {
+    /* text-align: center; */
+    color: white;
+    position: absolute;
+    bottom: 50px;
+    left:100px;
+
+}
+
+
+
+
+.gst p{
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    display: none;
+}
+
+.gst:hover h2{
+    bottom: 200px;
+    
+}
+
+.gst:hover p{
+    display: block;
+}
+
+
+.nice {
+    width: 100%;
+    height: 400px;
+    /* border: 1px solid black; */
+    background-color: #B86E5A;
+    color: white;
+}
+.nice-1 {
+    width: 70%;
+    height: 400px;
+    /* border: 1px solid black; */
+}
+.nic-1 {
+    width: 30%;
+    height: 300px;
+    /* border: 1px solid black; */
+    text-align: center;
+}
+
+
+
+
+footer {
+    width: 100%;
+    height: 400px;
+    /* border: 1px solid black; */
+    background-color: #F8F8F8;
+    background-color: black;
+ }
+
+ .foot {
+    width: 80%;
+    height: 300px;
+    /* border: 1px solid black; */
+ }
+ .ftr1 {
+    width: 30%;
+    height: 100%;
+    /* border: 1px solid black; */
+    padding: 10px;
+    color: white;   
+ }
+ 
+ .ftr1 i {
+    margin-left: 15px;
+    font-size: 30px;
+  
+    border-radius: 50%;
+    padding: 10px;
+ 
+   
+    
+ }
+
+ .ftr2 {
+    width: 30%;
+    height: 100%;
+    /* border: 1px solid black; */
+    padding: 10px;
+    color: white;
+ }
+ .ftr2 i {
+   
+    font-size: 20px;
+ }
+ .ftr2 p {
+    font-size: 20px;
+ }
+ .ftr3 {
+    width: 30%;
+    height: 100%;
+    /* border: 1px solid black; */
+    padding: 10px;
+    color: white;
+ }
+ .ftr3 span {
+    color: #E29C89;
+ }
+
+ .ftr3 p {
+    font-size: 20px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:992px)
+
+
+{
+    #text h1 {
+        font-size: 60px;
+    }
+    .luxury {
+        height: auto;
+    }
+    .comfort {
+        height: auto;
+        width: 90%;
+      
+    }
+    .luxu-2 h1 {
+
+        font-size: 25px;
+    }
+
+    .our-rooms {
+        height: auto;
+    }
+    .rooms {
+        height: auto;
+        /* flex-wrap: wrap; */
+        width: 90%;
+    }
+
+    
+    .our-hotel {
+        height: auto;
+    } 
+    .hotel-1 h2 {
+        font-size: 23px;
+    }
+    .hotel-2 {
+        width: 90%;
+    }
+
+    .our-guest {
+        height: auto;
+    }
+    .guest {
+        height: auto;
+        width: 90%;
+    
+    }
+    .gst {
+        width: 100%;
+       
+    }
+   
+    .gst p {
+        font-size: 12px;
+    }
+
+
+    .nice {
+        height: auto;
+    }
+    .nice-1 {
+        height: auto;
+        width: 90%;
+       
+    }
+    .nic-1 p {
+        font-size: 13px;
+    }
+    footer {
+        height: auto;
+    }
+    .foot {
+        height: auto;
+        width: 100%;
+    }
+ 
+    
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:768px)
+
+
+{
+    #text h1 {
+        font-size: 40px;
+    }
+
+    .luxury {
+        height: auto;
+    }
+    .comfort {
+        height: auto;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+    .luxu-1 {
+        width: 100%;
+        margin-top: 10px;
+        height: auto;
+    }
+    .luxu-2{
+        width: 48%;
+        margin-top: 10px;
+        height: auto;
+    }
+    .luxu-3 {
+        width: 48%;
+        margin-top: 10px;
+        height: auto;
+    }
+    .our-rooms {
+        height: auto;
+    }
+    .rooms {
+        height: auto;
+        flex-wrap: wrap;
+        width: 90%;
+    }
+    .rm {
+        width: 48%;
+    }
+
+    
+    .our-hotel {
+        height: auto;
+    } 
+    .hotel-1 h2 {
+        font-size: 23px;
+    }
+    .hotel-2 {
+        height: auto;
+        flex-direction: column;
+        width: 90%;
+    }
+    .htl {
+        width: 100%;
+        
+    }
+
+
+    .our-guest {
+        height: auto;
+    }
+    .guest {
+        height: auto;
+        width: 90%;
+        flex-direction: column;
+    }
+    .gst {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .gst h2 {
+        left: 250px;
+    }
+    .gst p {
+        left: 130px;
+    }
+
+    .nice {
+        height: auto;
+    }
+    .nice-1 {
+        height: auto;
+        width: 90%;
+        flex-direction: column;
+    }
+    .nic-1 {
+        width: 100%;
+    }
+
+    footer {
+        height: auto;
+    }
+    .foot {
+        height: auto;
+      flex-wrap: wrap;
+        width: 100%;
+    }
+    .ftr1 {
+        width: 48%;
+        margin-top: 10px;
+    }
+    .ftr2 {
+        width: 48%;
+        margin-top: 10px;
+    }
+    .ftr3 {
+        width: 90%;
+        margin-top: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:576px)
+
+
+{
+    #text h1 {
+        font-size: 40px;
+    }
+
+    .luxury {
+        height: auto;
+    }
+    .comfort {
+        height: auto;
+        flex-direction: column;
+    }
+    .luxu-1 {
+        width: 100%;
+        margin-top: 10px;
+        height: auto;
+    }
+    .luxu-2{
+        width: 100%;
+        margin-top: 10px;
+        height: auto;
+    }
+    .luxu-3 {
+        width: 100%;
+        margin-top: 10px;
+        height: auto;
+    }
+
+    .our-rooms {
+        height: auto;
+    }
+    .rooms {
+        height: auto;
+        flex-direction: column;
+        width: 90%;
+    }
+    .rm {
+        width: 100%;
+    }
+
+    .our-hotel {
+        height: auto;
+    } 
+    .hotel-1 h2 {
+        font-size: 23px;
+    }
+    .hotel-2 {
+        height: auto;
+        flex-direction: column;
+        width: 90%;
+    }
+    .htl {
+        width: 100%;
+    }
+
+    .our-guest {
+        height: auto;
+    }
+    .guest {
+        height: auto;
+        width: 90%;
+        flex-direction: column;
+    }
+    .gst {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .gst h2 {
+        left: 200px;
+    }
+    .gst p {
+        left: 70px;
+    }
+    .nice {
+        height: auto;
+    }
+    .nice-1 {
+        height: auto;
+        width: 90%;
+        flex-direction: column;
+    }
+    .nic-1 {
+        width: 100%;
+    }
+
+
+    footer {
+        height: auto;
+    }
+    .foot {
+        height: auto;
+        flex-direction: column;
+        width: 90%;
+    }
+    .ftr1 {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .ftr2 {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .ftr3 {
+        width: 100%;
+        margin-top: 10px;
+    }
+}

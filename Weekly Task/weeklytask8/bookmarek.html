@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <title>Job Application</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        th{
+            width: 150px;
+            border: 1px solid black;
+        }
+        td{
+            width: 150px;
+            border: 1px solid black;
+        }
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../weeklytask8/home.html">Home</a></li>
+                <li><a href="../weeklytask8/job.html">Applied Jobs</a></li>
+                <li><a href="../weeklytask8/bookmarek.html">Bookmark</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+
+   <center>
+    <section id="home1">
+        <div id="man1">
+            <table id="table1">
+
+            </table>
+        </div>
+    </section>
+   </center>
+
+</body>
+</html>
+
+<script>
+
+
+let bookmark=JSON.parse(localStorage.getItem("bookmark")) || []
+
+
+console.log(bookmark)
+   function dot(bookmark){
+       let table1=document.getElementById("table1")
+
+       table1.innerHTML=""
+
+       table1.innerHTML=`
+       <tr>
+           <th>Name</th>
+           <th>Email</th>
+           <th>Job Applied</th>
+           <th>Salary Expected</th>
+           <th>Bookmark</th>
+       </tr>    
+       
+       `
+
+       bookmark.map((el,i)=>{
+           let tr=document.createElement("tr")
+
+           tr.innerHTML=`
+           
+           <td>${el.name1}</td>
+           <td>${el.email}</td>
+           <td>${el.jobtype1}</td>
+           <td>${el.salary}</td>
+           <td><button onclick="del(${i})">Remove</button></td>
+           `
+
+           table1.appendChild(tr)
+       })
+
+   }
+   dot(bookmark)
+
+function del(id) {
+    bookmark.splice(id, 1); // Use splice to remove the element at the specified index
+
+    localStorage.setItem("bookmark", JSON.stringify(bookmark));
+
+    dot(bookmark);
+}
+
+   
+
+
+
+
+
+
+  
+       
+</script>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>singup</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+</head>
+<body>
+
+    <header>
+        <div class="hew-1">
+        <div class="sub-header">
+            <div class="logo">
+                <img src="image/logo (1).png" alt="">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a href="">HOME</a>
+                    </li>
+
+                    <li>
+                        <a href="">SHOP</a>
+                    </li>
+
+                    <li>
+                        <a href="">BLOG</a>
+                    </li>
+
+                    <li>
+                        <a href="">PAGES</a>
+                    </li>
+
+                    <li>
+                        <a href="">CONTECT</a>
+                    </li>
+
+                    <i class="bi bi-bag"></i>
+                    <i class="bi bi-search"></i>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+   
+        
+
+    </header>
+
+
+    <div class="account">
+        <!-- <div class="acc-1">
+            <div class="ac-1">
+                <h4>New to our website?</h4>
+                <p>There are advances being made in science and technology <br> everyday, and a good example of this is the</p><br>
+                <a href="">CREATE AN ACCOUNT</a>
+            </div> -->
+            <div class="ac-2">
+
+                <div class="ac_2">
+
+                 <h3>SINGUP FROM</h3> <br><br>
+
+                
+                <form id="karama_form_1">
+                   
+                      <label for="">Enter Email</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1_1" placeholder="Username"><br>
+                    
+                    
+                      <label for="">Enter Number</label>
+                      <input type="tel" class="form-control" id="examplenumber_1" placeholder="Enter Number"> <br>
+
+                      <label for="">Enter Password</label>
+                      <input type="password" class="form-control" placeholder="password" id="exampleInputPassword1_1"><br><br>
+                    
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1_1">
+                      <label class="form-check-label" for="exampleCheck1"> Keep me logged in</label> <br><br>
+                   
+                    <button type="submit">Singup</button>
+                  </form>
+                </div>
+                    
+            </div>
+        
+
+        </div>
+    </div>
+
+    
+</body>
+</html>
+
+
+<script>
+
+    let karama_form_1 = document.getElementById("karama_form_1")
+
+    karama_form_1.addEventListener("submit",function(event){
+        event.preventDefault()
+
+        let exampleInputEmail1_1 = document.getElementById("exampleInputEmail1_1").value 
+        let examplenumber_1 = document.getElementById("examplenumber_1").value
+        let exampleInputPassword1_1 = document.getElementById("exampleInputPassword1_1").value
+
+        let karama_user_1 = JSON.parse(localStorage.getItem("karm_user")) || []
+
+        karama_user_1.push({exampleInputEmail1_1,examplenumber_1,exampleInputPassword1_1})
+
+        localStorage.setItem("karm_user",JSON.stringify(karama_user_1))
+
+        console.log(karama_user_1)
+    })
+</script>
